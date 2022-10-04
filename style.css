@@ -1,0 +1,141 @@
+@import url(fontawesome.css);
+@import url(solid.css);
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    direction: ltr;
+    margin: 0;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+}
+.top-header{
+    text-transform: uppercase;
+}
+.top-header .right{
+    float: right;
+}
+.top-header ul li {
+    display: inline-block;
+    margin:20px;
+}
+.top-header ul li a{
+    color:  rgb(58, 206, 194);
+    text-decoration: none;
+    font-size: .937rem;
+}
+.top-header .left{
+    color: rgb(9, 58, 88);
+    font-weight: bold;
+}
+.top-header .left h1{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.top-header ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+.section {
+    background:  rgb(58, 206, 194);
+    text-align: center;
+    padding: 20px 0;
+    
+}
+.section img{
+    max-width: 200px;
+    display: inline-block;
+    margin-top: 50px;
+    
+   
+}
+.section p{
+    margin-top: 63px;
+    color: #FFFF;
+    font-weight: bold;
+}
+.article{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+    line-height: 29px;
+    font-size: 17px;
+}
+.article ul{
+    overflow: hidden;
+}
+.article ul li{
+    float: left;
+    width: 30%;
+    margin: 10px;
+
+}
+.article ul li img{
+    max-width: 90%;
+}
+.article ul li span{
+    color:  rgb(9, 58, 88);
+    font-weight: bold;
+
+}
+
+.box{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+.article .article-right{
+    float: right;
+    /* width: 300px; */
+    max-width:30%;
+    padding: 0 10px;
+    
+}
+.article h1{
+    font-size: 20px;
+}
+ .footer{
+    text-align: center;
+    background: rgb(217, 228, 234);
+    /* height: 80px; */
+    padding: 40px 0;
+}
+.mobile-menue{
+    margin-top: 33px;
+    width: 90px;
+    float: right;
+}
+
+@media screen and (max-width:1140px){
+   .right .mobile-menue{ 
+    display: none;
+   }
+}
+@media screen and (max-width:740px){
+
+    .mobile-menue{ 
+        display: block;
+    }
+}
+@media screen and (max-width:940px){
+    .article ul li{
+        width: 40%;
+    }
+}
+@media screen and (max-width:650px){
+    .article ul li{
+        width: 100%;
+    }
+}
